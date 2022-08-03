@@ -16,7 +16,7 @@ def inference(model_inputs:dict) -> dict:
 
     # Parse out your arguments
     prompt = model_inputs.get('prompt', None)
-    if prompt == None:
+    if prompt is None:
         prompt = "No prompt provided, [MASK] for you!"
     
     # Run the model
